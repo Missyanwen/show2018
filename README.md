@@ -1,35 +1,28 @@
-
-- git status ¡¾²é¿´µ±Ç°¿â×´Ì¬¡¿
-- git diff xxx.txt ¡¾¹¤×÷ÇøºÍÔİ´æÇøµÄ±È½Ï¡¿
-- git diff --cached xxx.txt ¡¾Ôİ´æÇøºÍ·ÖÖ§µÄ±È½Ï¡¿
-- git log (--pretty=oneline) ¡¾²é¿´ÀúÊ·¼ÇÂ¼¡¿
-- git reset --hard HEAD^ ¡¾»ØÍËµ½ÉÏÒ»¸ö°æ±¾(Ò»¸ö^±íÊ¾»ØÍËÉÏÒ»´Î,^^±íÊ¾»ØÍËÉÏÁ½´Î£¬ÒÔ´ÎÀàÍÆ)¡¿
-- git reflog ¡¾¼ÇÂ¼Ã¿Ò»´ÎÃüÁî¡¿
-- git reset --hard °æ±¾ºÅ ¡¾»ØÍËµ½Ä³¸öÖ¸¶¨°æ±¾¡¿
-- cat xxx.txt ¡¾²é¿´ÎÄ¼şÄÚÈİ¡¿
-- git reset HEAD xxx.txt ¡¾Èç¹û²»Ğ¡ĞÄaddµ½ÁËÔİ´æÇø¿ÉÓÃ´ËÃüÁî»ØÍËµ½¹¤×÷Çø¡¿
-- git checkout -- xxx.txt ¡¾ÉÏÃæ»ØÍËµ½¹¤×÷Çøºó¿ÉÓÃ´ËÃüÁî°Ñ¹¤×÷ÇøÀïµÄĞŞ¸ÄÈ«²¿³·Ïú¡¿
-- git rm xxx.txt ¡¾É¾³ı°æ±¾¿âÀïµÄÎÄ¼ş¡¿
-- git checkout -- xxx.txt ¡¾Èç¹û¹¤×÷ÇøÎóÉ¾ÁËÎÄ¼ş¿ÉÓÃ´ËÃüÁî´Ó°æ±¾¿âÀï»ñÈ¡¡¿
-- git remote add origin git@xxx.git ¡¾¹ØÓÚÒ»¸öÔ¶³Ì¿â¡¿
-- git push -u origin master ¡¾µÚÒ»´ÎÍÆËÍÒª¼ÓÉÏu,ÍÆËÍmaster·ÖÖ§µÄËùÓĞÄÚÈİµ½originÔ¶³Ì¿âÉÏ¡¿
-- git branch --all¡¾²é¿´ËùÓĞ·ÖÖ§¡¿
-  master¡¾±¾µØÄ¬ÈÏÖ÷·ÖÖ§¡¿ origin/master¡¾Ô¶³ÌÖ÷·ÖÖ§¡¿ origin/dev¡¾Ô¶³Ì¿ª·¢·ÖÖ§¡¿
-  ĞÂ¿ËÂ¡ÏÂÀ´µÄ´úÂëÄ¬ÈÏmasterºÍorigin/masterÊÇ¹ØÁªµÄ£¬Ò²ÊÇ¾ÍËûÃÇµÄ´úÂë±£³ÖÍ¬²½
-  µ«ÊÇorigin/dev·ÖÖ§ÔÚ±¾µØÃ»ÓĞÈÎºÎ¹ØÁª
-- git checkout dev origin/dev ¡¾´´½¨±¾µØ·ÖÖ§dev,²¢ºÍÔ¶³Ìorigin/dev·ÖÖ§¹ØÁª¡¿
-- git checkout dev ¡¾ÇĞ»»·ÖÖ§(dev·ÖÖ§)½øĞĞ¿ª·¢¡¿
-- git checkout -b dev ¡¾´´½¨±¾µØ·ÖÖ§¡¿
-- git push origin dev:dev ¡¾·¢²¼dev·ÖÖ§Í¬²½µ½Ô¶³Ì²Ö¿â»áĞÂ½¨Ò»¸ödev·ÖÖ§¡¿
-- git checkout dev¡¢git checkout master¡¢git merge dev
-  ¡¾Ë³ĞòÊÇÏÈÇĞ»»µ½dev·ÖÖ§,ÔÙÇĞ»»µ½master·ÖÖ§,°Ñdev·ÖÖ§ºÍmaster·ÖÖ§½øĞĞºÏ²¢¡¿
-- git push origin:dev ¡¾É¾³ıÔ¶³Ì·ÖÖ§¡¿
-- git branch -d dev ¡¾É¾³ı±¾µØdev·ÖÖ§£¬²»ÄÜÔÚµ±Ç°·ÖÖ§È¥É¾³ıµ±Ç°·ÖÖ§¡¿
-
-```
- i have master
- i have show fature1
-```
-see you agein
-show me test
+ï»¿
+- git status ã€æŸ¥çœ‹å½“å‰åº“çŠ¶æ€ã€‘
+- git diff xxx.txt ã€å·¥ä½œåŒºå’Œæš‚å­˜åŒºçš„æ¯”è¾ƒã€‘
+- git diff --cached xxx.txt ã€æš‚å­˜åŒºå’Œåˆ†æ”¯çš„æ¯”è¾ƒã€‘
+- git log (--pretty=oneline) ã€æŸ¥çœ‹å†å²è®°å½•ã€‘
+- git reset --hard HEAD^ ã€å›é€€åˆ°ä¸Šä¸€ä¸ªç‰ˆæœ¬(ä¸€ä¸ª^è¡¨ç¤ºå›é€€ä¸Šä¸€æ¬¡,^^è¡¨ç¤ºå›é€€ä¸Šä¸¤æ¬¡ï¼Œä»¥æ¬¡ç±»æ¨)ã€‘
+- git reflog ã€è®°å½•æ¯ä¸€æ¬¡å‘½ä»¤ã€‘
+- git reset --hard ç‰ˆæœ¬å· ã€å›é€€åˆ°æŸä¸ªæŒ‡å®šç‰ˆæœ¬ã€‘
+- cat xxx.txt ã€æŸ¥çœ‹æ–‡ä»¶å†…å®¹ã€‘
+- git reset HEAD xxx.txt ã€å¦‚æœä¸å°å¿ƒaddåˆ°äº†æš‚å­˜åŒºå¯ç”¨æ­¤å‘½ä»¤å›é€€åˆ°å·¥ä½œåŒºã€‘
+- git checkout -- xxx.txt ã€ä¸Šé¢å›é€€åˆ°å·¥ä½œåŒºåå¯ç”¨æ­¤å‘½ä»¤æŠŠå·¥ä½œåŒºé‡Œçš„ä¿®æ”¹å…¨éƒ¨æ’¤é”€ã€‘
+- git rm xxx.txt ã€åˆ é™¤ç‰ˆæœ¬åº“é‡Œçš„æ–‡ä»¶ã€‘
+- git checkout -- xxx.txt ã€å¦‚æœå·¥ä½œåŒºè¯¯åˆ äº†æ–‡ä»¶å¯ç”¨æ­¤å‘½ä»¤ä»ç‰ˆæœ¬åº“é‡Œè·å–ã€‘
+- git remote add origin git@xxx.git ã€å…³äºä¸€ä¸ªè¿œç¨‹åº“ã€‘
+- git push -u origin master ã€ç¬¬ä¸€æ¬¡æ¨é€è¦åŠ ä¸Šu,æ¨é€masteråˆ†æ”¯çš„æ‰€æœ‰å†…å®¹åˆ°originè¿œç¨‹åº“ä¸Šã€‘
+- git branch --allã€æŸ¥çœ‹æ‰€æœ‰åˆ†æ”¯ã€‘
+  masterã€æœ¬åœ°é»˜è®¤ä¸»åˆ†æ”¯ã€‘ origin/masterã€è¿œç¨‹ä¸»åˆ†æ”¯ã€‘ origin/devã€è¿œç¨‹å¼€å‘åˆ†æ”¯ã€‘
+  æ–°å…‹éš†ä¸‹æ¥çš„ä»£ç é»˜è®¤masterå’Œorigin/masteræ˜¯å…³è”çš„ï¼Œä¹Ÿæ˜¯å°±ä»–ä»¬çš„ä»£ç ä¿æŒåŒæ­¥
+  ä½†æ˜¯origin/devåˆ†æ”¯åœ¨æœ¬åœ°æ²¡æœ‰ä»»ä½•å…³è”
+- git checkout dev origin/dev ã€åˆ›å»ºæœ¬åœ°åˆ†æ”¯dev,å¹¶å’Œè¿œç¨‹origin/devåˆ†æ”¯å…³è”ã€‘
+- git checkout dev ã€åˆ‡æ¢åˆ†æ”¯(devåˆ†æ”¯)è¿›è¡Œå¼€å‘ã€‘
+- git checkout -b dev ã€åˆ›å»ºæœ¬åœ°åˆ†æ”¯ã€‘
+- git push origin dev:dev ã€å‘å¸ƒdevåˆ†æ”¯åŒæ­¥åˆ°è¿œç¨‹ä»“åº“ä¼šæ–°å»ºä¸€ä¸ªdevåˆ†æ”¯ã€‘
+- git checkout devã€git checkout masterã€git merge dev
+  ã€é¡ºåºæ˜¯å…ˆåˆ‡æ¢åˆ°devåˆ†æ”¯,å†åˆ‡æ¢åˆ°masteråˆ†æ”¯,æŠŠdevåˆ†æ”¯å’Œmasteråˆ†æ”¯è¿›è¡Œåˆå¹¶ã€‘
+- git push origin:dev ã€åˆ é™¤è¿œç¨‹åˆ†æ”¯ã€‘
+- git branch -d dev ã€åˆ é™¤æœ¬åœ°devåˆ†æ”¯ï¼Œä¸èƒ½åœ¨å½“å‰åˆ†æ”¯å»åˆ é™¤å½“å‰åˆ†æ”¯ã€‘
 
