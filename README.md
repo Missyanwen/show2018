@@ -27,5 +27,5 @@
 - git branch -d dev 【删除本地dev分支，不能在当前分支去删除当前分支】
 
 ```
- new a proejct q dss ffor test feature2
+ i have master
 ```
