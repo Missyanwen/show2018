@@ -24,6 +24,10 @@
 - git checkout dev、git checkout master、git merge dev
   【顺序是先切换到dev分支,再切换到master分支,把dev分支和master分支进行合并】
 - git push origin:dev 【删除远程分支】
-- git branch -d dev 【删除本地dev分支】  
+- git branch -d dev 【删除本地dev分支】
+
+```
+这个是dev分支
+```
 
   
