@@ -10,3 +10,4 @@
 # git checkout -- xxx.txt 【上面回退到工作区后可用此命令把工作区里的修改全部撤销】
 # git rm xxx.txt 【删除版本库里的文件】
 # git checkout -- xxx.txt 【如果工作区误删了文件可用此命令从版本库里获取】
+##
