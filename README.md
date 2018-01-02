@@ -27,5 +27,9 @@
 - git branch -d dev 【删除本地dev分支，不能在当前分支去删除当前分支】
 
 ```
+<<<<<<< HEAD
  i have master
+=======
+ i have show fature1
+>>>>>>> feature1
 ```
