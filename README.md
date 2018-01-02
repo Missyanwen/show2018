@@ -19,7 +19,7 @@
   但是origin/dev分支在本地没有任何关联
 - git checkout dev origin/dev 【创建本地分支dev,并和远程origin/dev分支关联】
 - git checkout dev 【切换分支(dev分支)进行开发】
-- git branch dev 【创建本地分支】
+- git checkout -b dev 【创建本地分支】
 - git push origin dev:dev 【发布dev分支同步到远程仓库会新建一个dev分支】
 - git checkout dev、git checkout master、git merge dev
   【顺序是先切换到dev分支,再切换到master分支,把dev分支和master分支进行合并】
