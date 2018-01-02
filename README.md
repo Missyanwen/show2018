@@ -25,14 +25,3 @@
   【顺序是先切换到dev分支,再切换到master分支,把dev分支和master分支进行合并】
 - git push origin:dev 【删除远程分支】
 - git branch -d dev 【删除本地dev分支，不能在当前分支去删除当前分支】
-
-```
- i have master
- i have show fature1
-```
-see you agein
-```
-show me test
-```
-inosd s s ds 
-
