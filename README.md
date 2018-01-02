@@ -6,4 +6,5 @@
 # git reflog 【记录每一次命令】
 # git reset --hard 版本号 【回退到某个指定版本】
 # cat xxx.txt 【查看文件内容】
-###
+# git reset HEAD xxx.txt 【如果不小心add到了暂存区可用此命令回退到工作区】
+# git checkout -- xxx.txt 【上面回退到工作区后可用此命令把工作区里的修改全部撤销】
