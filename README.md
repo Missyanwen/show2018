@@ -6,3 +6,4 @@
 # git reflog 【记录每一次命令】
 # git reset --hard 版本号 【回退到某个指定版本】
 # cat xxx.txt 【查看文件内容】
+###
