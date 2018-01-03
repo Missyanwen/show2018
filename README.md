@@ -2,8 +2,8 @@
 - git status 【查看当前库状态】
 - git add -A(--all) 【提交所有到暂存区】
 - git commit -m '文件说明' 【从暂存区提交到当前的分支默认是master分支也可叫版本库(版本库就是隐藏的.git目录)】
-- git diff (xxx.txt) 【工作区和暂存区的比较】
-- git diff --cached (xxx.txt) 【暂存区和分支的比较】
+- git diff (xxx.txt) 【工作区和暂存区的比较,只有是git add的时候才能看到】
+- git diff --cached (xxx.txt) 【暂存区和分支的比较,只有是git commit的时候才能看到】
 - git log (--pretty=oneline) 【查看历史记录】
 - git reset --hard HEAD^ 【回退到上一个版本(一个^表示回退上一次,^^表示回退上两次，以次类推)】
 - git reflog 【记录每一次命令】
@@ -23,8 +23,8 @@
 - git checkout dev 【切换分支(dev分支)进行开发】
 - git checkout -b dev 【创建本地分支】
 - git push origin dev:dev 【发布dev分支同步到远程仓库会新建一个dev分支】
-- git checkout dev、git checkout master、git merge dev
-  【顺序是先切换到dev分支,再切换到master分支,把dev分支和master分支进行合并】
+- git checkout dev / git checkout master / git merge dev
+  【顺序是先切换到dev分支/再切换到master分支/把dev分支和master分支进行合并，功能的合并只能在分支上去合，工作区和暂存区是合不了的】
 - git push origin:dev 【删除远程分支】
 - git branch -d dev 【删除本地dev分支，不能在当前分支去删除当前分支】
 - git stash 【假如在开发新功能,但是有个bug要修复,你必须要重新还原回来,但已经开发了大部份功能了,可用此命令他会保存当前的所有内容，然后再还原回上一个版本。】
