@@ -17,7 +17,7 @@
   master【本地默认主分支】 origin/master【远程主分支】 origin/dev【远程开发分支】
   新克隆下来的代码默认master和origin/master是关联的，也是就他们的代码保持同步
   但是origin/dev分支在本地没有任何关联
-- git checkout dev origin/dev 【创建本地分支dev,并和远程origin/dev分支关联】
+- git checkout -b dev origin/dev 【创建本地分支dev,并和远程origin/dev分支关联】
 - git checkout dev 【切换分支(dev分支)进行开发】
 - git checkout -b dev 【创建本地分支】
 - git push origin dev:dev 【发布dev分支同步到远程仓库会新建一个dev分支】
@@ -29,3 +29,6 @@
   git stash pop 【还原回之前开发的现场】
 - git remote (-v)【查看远程分支】
 - git push origin master 【把本地分支推送到远程分支上，origin是远程分支，master是本地分支】
+- git pull 【拉取代码】
+- git tag 标签名【为分支打个标签】
+  git tag 【查看打的标签】
