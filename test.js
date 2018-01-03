@@ -7,10 +7,10 @@
         },
         next: function() {
             document.getElementById('show').style.innerHTML = '打车';
-            document.body.style.backgroundImage = 'red';
+            //document.body.style.backgroundImage = 'red';
         },
         prev: function() {
-            document.title = '欢迎!'
+            document.title = '欢迎光临!'
         }
     }
 })(window);
