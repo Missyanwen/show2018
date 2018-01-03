@@ -3,14 +3,16 @@
 (function(w){
     var show = {
         data: function(obj) {
-            this.data = obj
+            this.data = obj;
+            this.t = new Object();
         },
         next: function() {
             document.getElementById('show').style.innerHTML = '打车';
             document.body.style.backgroundImage = 'blue';
         },
         prev: function() {
-            document.title = '欢迎光临!'
+            document.title = '欢迎光临!!'
+            //这是一次比较
             if(window.open) {
                 window.location.href = 'http://www.baidu.com';
             }
