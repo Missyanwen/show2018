@@ -1,9 +1,9 @@
-﻿
+﻿![演示](http://upload.ouliu.net/i/20180103140103jrm3n.png)
 - git status 【查看当前库状态】
 - git add -A(--all) 【提交所有到暂存区】
 - git commit -m '文件说明' 【从暂存区提交到当前的分支默认是master分支也可叫版本库(版本库就是隐藏的.git目录)】
-- git diff xxx.txt 【工作区和暂存区的比较】
-- git diff --cached xxx.txt 【暂存区和分支的比较】
+- git diff (xxx.txt) 【工作区和暂存区的比较】
+- git diff --cached (xxx.txt) 【暂存区和分支的比较】
 - git log (--pretty=oneline) 【查看历史记录】
 - git reset --hard HEAD^ 【回退到上一个版本(一个^表示回退上一次,^^表示回退上两次，以次类推)】
 - git reflog 【记录每一次命令】
