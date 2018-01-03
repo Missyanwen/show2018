@@ -28,3 +28,4 @@
 - git stash 【假如在开发新功能,但是有个bug要修复,你必须要重新还原回来,但已经开发了大部份功能了,可用此命令他会保存当前的所有内容，然后再还原回上一个版本。】
   git stash pop 【还原回之前开发的现场】
 - git remote (-v)【查看远程分支】
+- git push origin master 【把本地分支推送到远程分支上，origin是远程分支，master是本地分支】
