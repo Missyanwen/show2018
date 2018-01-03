@@ -1,5 +1,6 @@
 ﻿
 - git status 【查看当前库状态】
+- git add --all 【提交所有到暂存区】
 - git diff xxx.txt 【工作区和暂存区的比较】
 - git diff --cached xxx.txt 【暂存区和分支的比较】
 - git log (--pretty=oneline) 【查看历史记录】
