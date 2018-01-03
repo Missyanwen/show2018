@@ -17,9 +17,8 @@
         },
         log: function() {
             console.log(1);
-        },
-        show: function() {
-            console.log(22222);
+            console.log(22222222222);
+            console.log(33333333333);
         }
     }
 })(window);
