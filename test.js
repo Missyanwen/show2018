@@ -18,7 +18,7 @@
             }
         },
         log: function() {
-            console.log(1);
+            console.log('我是dev');
             console.log('小心啦');
             console.log('公车私用');
         }
