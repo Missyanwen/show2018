@@ -32,3 +32,5 @@
 - git pull 【拉取代码】
 - git tag 标签名【为分支打个标签】
   git tag 【查看打的标签】
+  git show 标签名【查看标签对应的版本信息】
+  git tag -d 标签名 【删除标签】
