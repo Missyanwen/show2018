@@ -14,6 +14,9 @@
             if(window.open) {
                 window.location.href = 'http://www.baidu.com';
             }
+        },
+        log: function() {
+            console.log(1);
         }
     }
 })(window);
