@@ -7,7 +7,7 @@
             this.t = new Object();
         },
 		show: function() {
-			
+			alert(1)
 		},
     }
 })(window);
