@@ -7,7 +7,8 @@
             this.t = new Object();
         },
 		show: function() {
-			console.log('...............................');
+            console.log('...............................');
+            console.log('no say hi');
 		},
     }
 })(window);
