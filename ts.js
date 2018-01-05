@@ -9,6 +9,9 @@
 		show: function() {
             console.log('...............................');
             console.log('no say goodbye');
-		},
+        },
+        test: function() {
+            console.log('tttttvvvvvvcccccc');
+        }
     }
 })(window);
