@@ -23,8 +23,15 @@
 - git checkout dev 【切换分支(dev分支)进行开发】
 - git checkout -b dev 【创建本地分支】
 - git push origin dev:dev 【发布dev分支同步到远程仓库会新建一个dev分支】
-- git checkout dev / git checkout master / git merge dev
-  【顺序是先切换到dev分支/再切换到master分支/把dev分支和master分支进行合并，功能的合并只能在分支上去合，工作区和暂存区是合不了的】
+- git checkout dev、
+  git checkout master、
+  git merge dev (git merge --no-ff -m "merge with no-ff" dev)
+  【
+    顺序是先切换到dev分支,
+    再切换到master分支,
+    把dev分支和master分支进行合并,Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息
+    (如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。)
+   】
 - git push origin:dev 【删除远程分支】
 - git branch -d dev 【删除本地dev分支，不能在当前分支去删除当前分支】
 - git stash 【假如在开发新功能,但是有个bug要修复,你必须要重新还原回来,但已经开发了大部份功能了,可用此命令他会保存当前的所有内容，然后再还原回上一个版本。】

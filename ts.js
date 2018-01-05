@@ -12,6 +12,9 @@
         },
         test: function() {
             console.log('tttttvvvvvvcccccc');
+        },
+        dev: function() {
+            
         }
     }
 })(window);
