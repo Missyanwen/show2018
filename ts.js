@@ -8,7 +8,7 @@
         },
 		show: function() {
             console.log('...............................');
-            console.log('no say hi');
+            console.log('no say goodbye');
 		},
     }
 })(window);
