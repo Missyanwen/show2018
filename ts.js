@@ -14,7 +14,7 @@
             console.log('tttttvvvvvvcccccc');
         },
         dev: function() {
-            
+            alert('nnnnnnnnnn""""""""""""""""""""""""""">>>>>>>>>>>>>>');
         }
     }
 })(window);
