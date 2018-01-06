@@ -104,7 +104,7 @@
 ```
 
 - installModule是vuex的核心方法他是处理Store对象传入的配置参数比如state、action、getter之类的对象
-- resetStoreVM是全局
+- resetStoreVM 方法是初始化 store._vm，观测 state 和 getters 的变化；最后是应用传入的插件。
 
 ```
   module.forEachMutation(function (mutation, key) {
