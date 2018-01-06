@@ -13,9 +13,13 @@
   };
 ```
 
-- 全局定义了一些工具方法比如段言、循环、Promise方法
+- vuex里分为几块
+  - 1、全局定义了一些工具方法比如段言、循环、Promise方法
+  - 3、定义了全局的mapState、mapAction、mapGetter方法
+  - 3、还有就是一个Module方法
+  - 4、Store对象
 
-- vuex的核心就是一个Store对象
+# vuex的核心对象就是Store对象
   
 - 它定义dispatch、commit、watch这些原型方法
 
@@ -86,3 +90,40 @@
 };
 ```
 - 然后是把dispatc、commit指向自己接着执行installModule
+
+```
+  this.dispatch = function boundDispatch (type, payload) {
+    return dispatch.call(store, type, payload)
+  };
+  this.commit = function boundCommit (type, payload, options) {
+    return commit.call(store, type, payload, options)
+  };
+  ....
+  installModule(this, state, [], this._modules.root);
+  resetStoreVM(this, state);
+```
+
+- installModule是vuex的核心方法他是处理Store对象传入的配置参数比如state、action、getter之类的对象
+- resetStoreVM是全局
+
+```
+  module.forEachMutation(function (mutation, key) {
+    var namespacedType = namespace + key;
+    registerMutation(store, namespacedType, mutation, local);
+  });
+
+  module.forEachAction(function (action, key) {
+    var type = action.root ? key : namespace + key;
+    var handler = action.handler || action;
+    registerAction(store, type, handler, local);
+  });
+
+  module.forEachGetter(function (getter, key) {
+    var namespacedType = namespace + key;
+    registerGetter(store, namespacedType, getter, local);
+  });
+
+  module.forEachChild(function (child, key) {
+    installModule(store, rootState, path.concat(key), child, hot);
+  });
+```
