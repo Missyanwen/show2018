@@ -16,15 +16,16 @@
 - 全局定义了一些工具方法比如段言、循环、Promise方法
 
 - vuex的核心就是一个Store对象
-  它定义dispatch、commit、watch这些原型方法
--------------------------------------
+  
+##  它定义dispatch、commit、watch这些原型方法
+
 ```
   Store.prototype.dispath = function() {}
   Store.prototype.commit = function() {}
   Store.prototype.watch = function() {}
 ```
-  在Store方法里面判断全局下是否有vue,如果有的话去区别版本来加载vuex
--------------------------------------
+##  在Store方法里面判断全局下是否有vue,如果有的话去区别版本来加载vuex
+
 ```
   if (!Vue && typeof window !== 'undefined' && window.Vue) {
     install(window.Vue);
@@ -84,5 +85,4 @@
   }
 };
 ```
-  然后是把dispatc、commit指向自己接着执行installModule
--------------------------------------
+## 然后是把dispatc、commit指向自己接着执行installModule
